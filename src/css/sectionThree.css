@@ -1,0 +1,153 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.section_three{
+    width: 100%;
+    max-width: 1920px;
+    background-color:white;
+    color:black;
+}
+
+.both_sides_sec_three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.section_three_left{
+    width: 60%;
+}
+
+.contact {
+    color: black;
+    text-transform: uppercase;
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+
+.hr_three{
+    background-color: black;
+    border: none;
+    height: 10px;
+    width: 50px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.p_three{
+    color: black;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 80px;
+    line-height: 1.2;
+    opacity: 0.8;
+}
+
+.section_three_right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.h4{
+    font-weight: bolder;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.input{
+    width: 85%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input:focus{
+    border: 2px solid black;
+}
+
+.text_area{
+    width: 85%;
+    padding-left: 5px;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-top: 5px;
+    height: 100px;
+}
+
+.text_area:focus{
+    border: 2px solid black;
+
+}
+
+.button_send{
+    width: 20%;
+    min-width: 80px;
+    max-width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid #448ccb;
+    color: #448ccb;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.button_send:hover{
+    color:black;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+@media(max-width: 840px){
+    .both_sides_sec_three{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_three_left{
+        width: 100%;
+    }
+
+    .section_three_right{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .hr_three{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .p_three{
+        text-align: justify;
+    }
+
+    .input, .text_area{
+       width: 100%;
+    }
+
+    .button_send{
+        justify-content: center;
+    }
+
+}
